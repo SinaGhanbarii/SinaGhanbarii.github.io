@@ -5,8 +5,8 @@ main:
   - name: Research
     url: research/
     weight: 20
-  - name: Publications
-    url: publications/
+  - name: Blog
+    url: blog/
     weight: 30
   - name: Projects
     url: projects/

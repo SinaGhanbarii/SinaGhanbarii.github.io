@@ -1,6 +1,6 @@
 ---
 title: ''
-summary: 'Chemical engineering research in process modelling, desalination, sustainable energy, and data-driven engineering.'
+summary: 'Chemical engineering research, academic activities, and recent updates.'
 date: 2026-06-29
 type: landing
 
@@ -13,7 +13,7 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
       headings:
-        about: About
+        about: About Me
         education: Education
         interests: Research Interests
     design:
@@ -26,45 +26,28 @@ sections:
         size: medium
         shape: circle
 
-  - block: markdown
-    content:
-      title: Research Focus
-      subtitle: Sustainable processes supported by experiments, modelling, and data
-      text: |-
-        My research combines **chemical-engineering fundamentals**, **process simulation**, and **data-driven methods** to study sustainable technologies. My current work centres on solar-assisted humidification–dehumidification desalination, including experimental condenser enhancement and process modelling.
-
-        I am also interested in environmental catalysis, machine-learning applications in thermodynamics and materials, techno-economic analysis, and life-cycle assessment.
-    design:
-      columns: '1'
-
   - block: collection
+    id: news
     content:
-      title: Featured Projects
-      text: Selected work in desalination, process design, sustainability, and computational chemical engineering.
-      filters:
-        folders:
-          - projects
-        featured_only: true
+      title: Recent News
+      text: Recent academic, research, and professional updates.
+      page_type: blog
       count: 6
-    design:
-      view: article-grid
-      columns: 3
-      fill_image: false
-      show_date: false
-      show_read_time: false
-      show_read_more: true
-
-  - block: collection
-    id: publications
-    content:
-      title: Publications
-      text: Published and in-press academic work.
       filters:
-        folders:
-          - publications
         exclude_featured: false
+        exclude_future: true
+        exclude_past: false
+      offset: 0
+      order: desc
     design:
-      view: citation
+      view: card
+      columns: 2
+      spacing:
+        padding:
+          - '0'
+          - '0'
+          - '0'
+          - '0'
 
   - block: markdown
     id: contact
