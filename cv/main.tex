@@ -1,0 +1,381 @@
+% ============================================================
+%   MohammadSina GhanbariPakdehi — Academic CV
+%   Style: Custom Elegant Minimalist · Navy Blue Accent
+%   Engine: pdfLaTeX  (no external class required)
+% ============================================================
+\documentclass[10pt, a4paper]{article}
+
+% ── Core packages ───────────────────────────────────────────
+\usepackage[a4paper, top=1.8cm, bottom=1.8cm,
+            left=2.0cm, right=2.0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}           % clean Latin Modern serif
+\usepackage{microtype}         % optical margin alignment
+\usepackage[svgnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{amssymb}
+
+% ── Colour palette ──────────────────────────────────────────
+\definecolor{NavyPrimary}{HTML}{1B2A4A}   % deep navy
+\definecolor{NavyMid}{HTML}{2E4A7A}       % medium navy
+\definecolor{NavyLight}{HTML}{4A6FA5}     % link / accent
+\definecolor{RuleGray}{HTML}{C8CDD6}      % thin rule colour
+\definecolor{BodyGray}{HTML}{2C2C2C}      % near-black body text
+
+% ── Hyperref setup ──────────────────────────────────────────
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = NavyMid,
+  linkcolor  = NavyMid,
+  pdfauthor  = {Sina GhanbariPakdehi},
+  pdftitle   = {Curriculum Vitae},
+}
+
+% ── Typography ──────────────────────────────────────────────
+\color{BodyGray}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ── List style ──────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin = 1.4em,
+  itemsep    = 1.5pt,
+  parsep     = 0pt,
+  topsep     = 3pt,
+  label      = {\small\textcolor{NavyLight}{\textbullet}},
+}
+
+% ============================================================
+%   CUSTOM COMMANDS
+% ============================================================
+
+% ── Section heading: bold uppercase label, then full-width navy rule ─
+\newcommand{\cvsection}[1]{%
+  \vspace{9pt}%
+  \noindent{\normalfont\bfseries\normalsize\color{NavyPrimary}%
+    \MakeUppercase{#1}}%
+  \vspace{0pt}\par\vspace{-2pt}%
+  \noindent{\color{NavyPrimary}\rule{\linewidth}{0.7pt}}%
+  \vspace{4pt}\par
+}
+
+% ── Thin separator between entries ──────────────────────────
+\newcommand{\entrysep}{\vspace{3pt}}
+
+% ── Education entry: navy bullet + institution bold, degree italic ──
+\newcommand{\eduheader}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\color{NavyLight}\small$\blacksquare$}\enspace\textbf{\color{NavyPrimary}#1}
+    & \textit{\small\color{NavyMid}#2}
+  \end{tabularx}%
+  \par\vspace{1pt}%
+}
+\newcommand{\edudegree}[1]{%
+  {\small\itshape\color{BodyGray} #1}\par\vspace{1pt}%
+}
+
+% ── Entry header: bold title + flush-right date ─────────────
+%    #1 = Institution/Project  #2 = Date range
+\newcommand{\entryheader}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{\color{NavyPrimary}#1} & \textit{\small\color{NavyMid}#2}
+  \end{tabularx}%
+  \par\vspace{1pt}%
+}
+
+% ── Sub-line (role / degree / track) ────────────────────────
+\newcommand{\entrysub}[1]{%
+  {\small\itshape #1}\par\vspace{1pt}%
+}
+
+% ── Thesis / note line ──────────────────────────────────────
+\newcommand{\entrynote}[1]{%
+  {\small #1}\par%
+}
+
+% ── Award / publication row ─────────────────────────────────
+%    #1 = content   #2 = right-side note (year / status)
+\newcommand{\prizerow}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\small #1} & {\small\itshape\color{NavyMid}#2}
+  \end{tabularx}%
+  \par\vspace{3pt}%
+}
+
+% ── Skill row ───────────────────────────────────────────────
+\newcommand{\skillrow}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries\color{NavyPrimary}}p{3.6cm} X@{}}
+    #1 & {\small #2}
+  \end{tabularx}%
+  \par\vspace{2pt}%
+}
+
+% ============================================================
+%   DOCUMENT
+% ============================================================
+\begin{document}
+\pagestyle{empty}
+
+% ── Option C header: name left, contacts stacked right ─
+\noindent
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+  {\LARGE\bfseries\color{NavyPrimary} Sina GhanbariPakdehi}
+  &
+  \begin{tabular}[t]{@{} r @{}}
+    \small\href{mailto:mohammadsina.ghanbaripakdehi@mail.polimi.it}%
+      {{\color{NavyLight}\faEnvelope[regular]}\;\color{NavyMid}Email} \\[4pt]
+    \small\href{https://github.com/SinaGhanbarii}%
+      {{\color{NavyLight}\faGithub}\;\color{NavyMid}GitHub} \\[4pt]
+    \small\href{tel:+393770823059}%
+      {{\color{NavyLight}\faPhone*}\;\color{NavyMid}Personal Phone} \\[4pt]
+    \small\href{https://www.linkedin.com/in/sinaaghanbari/}%
+      {{\color{NavyLight}\faLinkedinIn}\;\color{NavyMid}LinkedIn}
+  \end{tabular}
+\end{tabularx}
+
+% ============================================================
+\cvsection{Education}
+
+\eduheader{University of Bradford}{Jan.\ 2025 -- Jul.\ 2025}
+\edudegree{Exchange Research Student}
+\entrynote{\textbf{Thesis:} Optimization of Multistage Humidification and
+Dehumidification Desalination Plant Using Solar Energy
+(Experimental and Theoretical Study)}
+
+\entrysep
+
+\eduheader{Politecnico di Milano}{Sept.\ 2023 -- Present}
+\edudegree{M.Sc.\ Chemical Engineering — Energy and Environment Track}
+
+\entrysep
+
+\eduheader{Sharif University of Technology}{Sept.\ 2019 -- Jul.\ 2023}
+\edudegree{B.Sc.\ Chemical Engineering}
+\entrynote{\textbf{Thesis:} Simulation of gaseous pollutant conversion on a
+TWC with a honeycomb structure}
+
+% ============================================================
+\cvsection{Experience}
+
+\entryheader{Research Institute of Petroleum Industry}{Jul.\ 2022 -- Sept.\ 2022}
+\entrysub{Research Intern \textemdash\ Supervisor: Prof.\ Alimorad Rashidi}
+\begin{itemize}
+  \item Synthesized Cordierite phase and studied thermal operation of monoliths
+        for TWC applications
+  \item Achieved optimal monolith composition through neural network modelling
+  \item Utilised XRD, XRF, SEM, and TEM techniques for material characterisation
+\end{itemize}
+
+\entrysep
+
+\entryheader{Iran's National Elites' Foundation}{Jan.\ 2022 -- Sept.\ 2022}
+\entrysub{Research Assistant}
+\begin{itemize}
+  \item Investigated electrochemical treatment methods for removing nitrate,
+        lead, and copper from industrial wastewater
+  \item Developed and tested efficient electrochemical removal processes
+\end{itemize}
+
+\entrysep
+
+\entryheader{Sharif University of Technology}{Teaching Assistant}
+\begin{itemize}
+  \item \begin{tabularx}{\linewidth}{@{}X r@{}}
+      \textbf{Kinetics and Reactor Design} & \textit{\small\color{NavyMid}Feb.\ 2023 -- Jun.\ 2023}
+    \end{tabularx}\vspace{-2pt}\\
+    {\small Instructor: Prof.\ Farhad Khorashe}
+  \item \begin{tabularx}{\linewidth}{@{}X r@{}}
+      \textbf{Kinetics and Reactor Design} & \textit{\small\color{NavyMid}Sept.\ 2022 -- Feb.\ 2023}
+    \end{tabularx}\vspace{-2pt}\\
+    {\small Instructor: Prof.\ Mohammad Kazemini}
+  \item \begin{tabularx}{\linewidth}{@{}X r@{}}
+      \textbf{Numerical Methods} & \textit{\small\color{NavyMid}Sept.\ 2022 -- Feb.\ 2023}
+    \end{tabularx}\vspace{-2pt}\\
+    {\small Instructor: Prof.\ Farhad Khorashe}
+  \item \begin{tabularx}{\linewidth}{@{}X r@{}}
+      \textbf{Mass Transfer Operation} & \textit{\small\color{NavyMid}Feb.\ 2022 -- Jun.\ 2022}
+    \end{tabularx}\vspace{-2pt}\\
+    {\small Instructor: Prof.\ Mohammad Kazemini}
+\end{itemize}
+
+% ============================================================
+\cvsection{Publications}
+
+\prizerow{%
+  {[1]}\enspace GhanbariPakdehi, M.S.\ \& Rajaei, A.\ (2026).
+  \textit{Biomass combustion: introduction and technologies.}
+  Chapter in \textit{Encyclopedia of Renewable Energy}, Elsevier.%
+}{In Press}
+
+\prizerow{%
+  {[2]}\enspace Ghanbaripakdehi, M.\ \& Kazemini, M.\ (2023).
+  Investigation on Simulation of Methane Thermal Conversion and its Effective
+  Factors in Syngas.
+  \textit{Proceedings of the 5\textsuperscript{th} International Congress on
+  Chemistry and Chemical Engineering}, Tehran, Iran.
+  %
+}{\href{https://www.researchgate.net/publication/374006358}{Access Link}}
+
+% ============================================================
+\cvsection{Academic Projects}
+
+\entryheader{Prediction of Thermodynamic Properties Based on Functional Groups}%
+            {May 2025 -- Jul.\ 2025}
+\begin{itemize}
+  \item Developed and compared classical machine learning algorithms and neural
+        networks to predict thermodynamic properties of molecules based on
+        quantum features.
+        \href{https://github.com/SinaGhanbarii/Prediction-of-thermodynamic-properties-based-on-functional-groups}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+\entrysep
+
+\entryheader{Techno-Economic Analysis and LCA of Biochar Production}%
+            {Apr.\ 2025 -- May 2025}
+\begin{itemize}
+  \item Designed a pilot-scale biochar production plant via slow pyrolysis of
+        corncob waste, optimising the process by utilising syngas for internal
+        heating and sizing key equipment (rotary kiln, dryers)
+  \item Conducted a Class~5 techno-economic analysis to estimate CAPEX and OPEX;
+        calculated NPV, IRR, and ROI; performed sensitivity analysis on feed
+        rates and product pricing
+  \item Performed a cradle-to-gate Life Cycle Assessment (LCA) to quantify GHG
+        emissions (CO$_2$, CH$_4$); analysed environmental impacts under various
+        electricity-mix scenarios
+\end{itemize}
+
+\entrysep
+
+\entryheader{Conceptual Design and Economic Feasibility of HDA of Toluene Plant}%
+            {Mar.\ 2024 -- Apr.\ 2024}
+\begin{itemize}
+  \item Simulated conceptual design and conducted economic feasibility study of a
+        hydrodealkylation plant using MATLAB and Aspen HYSYS; performed NPV, IRR,
+        ROI, and PBP analysis.
+        \href{https://github.com/SinaGhanbarii/HDA-Plant-Simulation}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+\entrysep
+
+\entryheader{Numerical Methods and Their Application in Chemical Engineering}%
+            {Aug.\ 2023 -- Present}
+\begin{itemize}
+  \item Comprehensive repository offering educational content, practical code
+        samples, and real-world applications to enhance problem-solving skills.
+        \href{https://github.com/SinaGhanbarii/Numerical-Methods-and-Their-Application-in-Chemical-Engineering}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+\entrysep
+
+\entryheader{B.Sc.\ Thesis — Catalytic Converter Modelling}%
+            {Jul.\ 2022 -- Jul.\ 2023}
+\entrysub{Supervisor: Prof.\ Tayebbeh Hamzehlouyan}
+\begin{itemize}
+  \item Modelled gaseous pollutant conversion and mass-transfer phenomena in a
+        catalytic converter with a honeycomb structure using COMSOL Multiphysics
+        and MATLAB; analysed the influence of operating parameters on conversion
+        efficiency.
+        \href{https://drive.google.com/file/d/1XvlRVqSWWViUHNb8WccJ51BwvILRJ_UE/view?usp=sharing}%
+             {\textbf{[Full Document]}}
+\end{itemize}
+
+\entrysep
+
+\entryheader{Technical and Financial Analysis of 2-Ethylhexyl Acrylate Plant}%
+            {Jan.\ 2023 -- Feb.\ 2023}
+\begin{itemize}
+  \item Designed and simulated a 2-Ethylhexyl Acrylate plant in Aspen HYSYS —
+        reaction, separation, and heat-integration systems
+  \item Performed market study and calculated NPV, IRR, ROI, and PBP over the
+        plant lifetime
+\end{itemize}
+
+\entrysep
+
+\entryheader{PID Controller Design for a CSTR System (Python)}{Feb.\ 2023}
+\begin{itemize}
+  \item Designed a PID temperature controller for a heat-exchanger system using
+        control theory and simulation techniques in Python
+  \item Achieved optimised controller parameters via the Levenberg--Marquardt
+        algorithm.
+        \href{https://github.com/SinaGhanbarii/Design-a-PID-Controller-to-Maintain-the-Parameters-of-a-System-of-CSTR-Reactors}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+\entrysep
+
+\entryheader{Flash Distillation Tower Simulation in MATLAB}{May 2022}
+\begin{itemize}
+  \item Simulated a flash distillation tower and shell-and-tube heat exchanger
+        using finite-difference methods; calculated heat-transfer coefficients
+        and temperature profiles.
+        \href{https://github.com/SinaGhanbarii/Flash-Distillation}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+\entrysep
+
+\entryheader{Steady-State Heat Transfer: Finned-Plate Heat Exchanger (MATLAB)}%
+            {Jun.\ 2021 -- Jul.\ 2021}
+\begin{itemize}
+  \item Derived temperature equations using the finite-difference method with
+        appropriate boundary conditions; solved linear systems via Gauss--Seidel
+        iteration
+  \item Generated temperature-distribution plots and calculated overall heat loss,
+        validating model accuracy.
+        \href{https://github.com/SinaGhanbarii/Steady-State-Heat-Transfer-Modeling-the-Finned-Plate-H.Ex.}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+% ============================================================
+\cvsection{Technical Skills}
+
+\newlength{\skilllabelwd}
+\setlength{\skilllabelwd}{2.8cm}
+
+\noindent\makebox[\skilllabelwd][l]{\textbf{\color{NavyPrimary}Programming}}%
+{\small Python (Pandas, NumPy, SciPy, TensorFlow), MATLAB, gPROMS}\\[3pt]
+\noindent\makebox[\skilllabelwd][l]{\textbf{\color{NavyPrimary}Software}}%
+{\small COMSOL Multiphysics, Aspen HYSYS, GAMS, Dynsim, Git, Microsoft Office}\\[3pt]
+\noindent\makebox[\skilllabelwd][l]{\textbf{\color{NavyPrimary}Soft Skills}}%
+{\small Time Management, Teamwork, Problem-Solving, Documentation}
+
+% ============================================================
+\cvsection{Volunteering Experience}
+
+\entryheader{Sharif University of Technology — Kimia Scientific Group}%
+            {Mar.\ 2024 -- Apr.\ 2024}
+\entrysub{Instructor}
+\begin{itemize}
+  \item Held a workshop introducing MATLAB to undergraduate Chemical and
+        Petroleum Engineering students.
+        \href{https://github.com/SinaGhanbarii/Introduction-To-MATLAB-Workshop}%
+             {\textbf{[GitHub]}}
+  \item Delivered an elementary MATLAB course for the same audience.
+        \href{https://github.com/SinaGhanbarii/Elementary-MATLAB-Course}%
+             {\textbf{[GitHub]}}
+\end{itemize}
+
+% ============================================================
+\cvsection{Awards \& Scholarships}
+
+\prizerow{Politecnico di Milano International Mobility Grant}{2025}
+\prizerow{Iran's National Elites' Foundation Scholarship to Talented Students}%
+         {2021, 2022}
+
+\end{document}

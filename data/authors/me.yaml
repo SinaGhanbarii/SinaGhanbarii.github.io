@@ -1,0 +1,126 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Sina GhanbariPakdehi
+  given: Sina
+  family: GhanbariPakdehi
+  alternate: ''
+  pronunciation: ''
+  pronouns: he/him
+postnominals: []
+status:
+  icon: "⚗️"
+role: M.Sc. Chemical Engineering Candidate
+bio: |
+  Sina GhanbariPakdehi is an M.Sc. candidate in Chemical Engineering at
+  Politecnico di Milano, specialising in Energy and Environment. His work
+  focuses on process modelling, sustainable energy systems, desalination,
+  environmental catalysis, and data-driven methods in chemical engineering.
+
+  During a research exchange at the University of Bradford, he worked on the
+  experimental and theoretical optimisation of a multistage
+  humidification–dehumidification desalination system powered by solar energy.
+  His broader experience includes catalytic-converter modelling,
+  thermodynamic-property prediction using machine learning, process design,
+  techno-economic analysis, and life-cycle assessment.
+
+affiliations:
+  - name: Politecnico di Milano
+    url: https://www.polimi.it/
+
+links:
+  - icon: at-symbol
+    url: mailto:mohammadsina.ghanbaripakdehi@mail.polimi.it
+    label: Email
+  - icon: brands/github
+    url: https://github.com/SinaGhanbarii
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/sinaaghanbari/
+    label: LinkedIn
+
+interests:
+  - Process Systems Engineering
+  - Humidification–Dehumidification Desalination
+  - Renewable and Solar Energy Systems
+  - Process Modelling and Optimisation
+  - Machine Learning in Chemical Engineering
+  - Techno-Economic Analysis and Life-Cycle Assessment
+  - Environmental Catalysis and Emission Control
+
+education:
+  - degree: Exchange Research Student
+    institution: University of Bradford
+    start: 2025-01-01
+    end: 2025-07-31
+    summary: |
+      Research thesis: *Optimization of Multistage Humidification and
+      Dehumidification Desalination Plant Using Solar Energy (Experimental and
+      Theoretical Study).*
+  - degree: M.Sc. Chemical Engineering — Energy and Environment
+    institution: Politecnico di Milano
+    start: 2023-09-01
+    summary: |
+      Graduate study in chemical engineering with emphasis on energy,
+      environment, process modelling, and sustainable technologies.
+  - degree: B.Sc. Chemical Engineering
+    institution: Sharif University of Technology
+    start: 2019-09-01
+    end: 2023-07-31
+    summary: |
+      Thesis: *Simulation of gaseous pollutant conversion on a three-way
+      catalytic converter with a honeycomb structure.*
+
+experience:
+  - role: Research Intern
+    org: Research Institute of Petroleum Industry
+    start: 2022-07-01
+    end: 2022-09-30
+    summary: |
+      - Synthesised cordierite and studied the thermal operation of monoliths for three-way catalytic-converter applications.
+      - Used neural-network modelling to identify an optimal monolith composition.
+      - Applied XRD, XRF, SEM, and TEM for material characterisation.
+  - role: Research Assistant
+    org: Iran's National Elites' Foundation
+    start: 2022-01-01
+    end: 2022-09-30
+    summary: |
+      Investigated electrochemical methods for removing nitrate, lead, and
+      copper from industrial wastewater and supported the development and
+      testing of removal processes.
+  - role: Teaching Assistant — Kinetics and Reactor Design
+    org: Sharif University of Technology
+    start: 2022-09-01
+    end: 2023-06-30
+    summary: |
+      Supported two consecutive offerings of Kinetics and Reactor Design under
+      Prof. Mohammad Kazemini and Prof. Farhad Khorashe.
+  - role: Teaching Assistant — Numerical Methods
+    org: Sharif University of Technology
+    start: 2022-09-01
+    end: 2023-02-28
+    summary: |
+      Assisted Prof. Farhad Khorashe in teaching numerical methods for chemical
+      engineering applications.
+  - role: Teaching Assistant — Mass Transfer Operations
+    org: Sharif University of Technology
+    start: 2022-02-01
+    end: 2022-06-30
+    summary: |
+      Assisted Prof. Mohammad Kazemini in course delivery and student support.
+
+skills: []
+languages: []
+
+awards:
+  - title: International Mobility Grant
+    awarder: Politecnico di Milano
+    date: "2025-01-01"
+    summary: Award supporting international academic mobility.
+    icon: hero/globe-europe-africa
+  - title: Scholarship to Talented Students
+    awarder: Iran's National Elites' Foundation
+    date: "2022-01-01"
+    summary: Awarded in 2021 and 2022.
+    icon: hero/trophy
