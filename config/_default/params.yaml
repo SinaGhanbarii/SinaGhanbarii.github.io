@@ -30,7 +30,7 @@ hugoblox:
         foreground: ""
 
   typography:
-    pack: "academic"
+    pack: "modern"
 
   layout:
     radius: "md"
