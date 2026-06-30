@@ -1,60 +1,42 @@
 ---
-
 title: 'gPROMS ModelBuilder VS Code Extension'
-date: '2026-06-30T00:00:00Z'
-summary: 'An open-source Visual Studio Code extension that provides modern language-support features for writing and editing gPROMS ModelBuilder code.'
+date: 2026-06-30
+summary: 'An open-source Visual Studio Code extension providing syntax highlighting, autocomplete, snippets, diagnostics, and language support for gPROMS ModelBuilder.'
+draft: false
 featured: true
 
 tags:
-
-* gPROMS
-* Visual Studio Code
-* JavaScript
-* Process Modelling
-* Developer Tools
-* Open Source
+  - gPROMS
+  - Visual Studio Code
+  - JavaScript
+  - Process Modelling
+  - Developer Tools
+  - Open Source
 
 links:
-
-* type: code
-  url: https://github.com/SinaGhanbarii/gPROMS-ModelBuilder-VSCode-Extension
-
+  - name: GitHub Repository
+    url: https://github.com/SinaGhanbarii/gPROMS-ModelBuilder-VSCode-Extension
 ---
 
-The **gPROMS ModelBuilder VS Code Extension** provides an improved development environment for writing and editing gPROMS ModelBuilder and GPL code directly in Visual Studio Code.
-
-The project was developed to make process-model development faster, clearer, and less error-prone by introducing language-support features that are normally available in modern programming environments.
+The **gPROMS ModelBuilder VS Code Extension** provides a modern development environment for writing and editing gPROMS ModelBuilder and GPL code in Visual Studio Code.
 
 ## Main features
 
-* Syntax highlighting for gPROMS blocks, section headers, mathematical functions, control-flow statements, PDE operators, variables, numbers, strings, and comments
-* More than 65 ready-to-use code snippets for models, processes, tasks, reactors, heat exchangers, optimisation, estimation, schedules, and distributed systems
-* Context-aware autocomplete for declared variables, parameters, unit names, keywords, and built-in functions
-* Hover documentation containing syntax descriptions and working examples
-* Real-time error checking for missing semicolons, unclosed blocks, misspelled keywords, invalid assignment operators, and misplaced sections
-* Block folding for models, processes, loops, tasks, sequences, and parallel blocks
-* Automatic comment toggling and bracket handling
-* Support for `.gproms` and `.gpl` files
+- Syntax highlighting for gPROMS language constructs
+- More than 65 reusable code snippets
+- Context-aware autocomplete
+- Hover documentation
+- Real-time diagnostics and error checking
+- Code folding for models, processes, loops, and tasks
+- Support for `.gproms` and `.gpl` files
+- Dark and light editor themes
 
 ## Technical implementation
 
-The extension is implemented in JavaScript using the Visual Studio Code Extension API and Language Server Protocol.
-
-It includes:
-
-* A TextMate grammar for syntax highlighting
-* A language server for diagnostics and hover documentation
-* A symbol parser for context-aware autocomplete
-* A snippet library for common process-modelling structures
-* Custom dark and light colour configurations
-* A packaged `.vsix` installer with no external runtime dependencies
-
-## Motivation
-
-gPROMS ModelBuilder is widely used for equation-oriented process modelling, dynamic simulation, optimisation, and parameter estimation. However, its code-editing workflow does not provide many of the language-assistance features commonly available in modern code editors.
-
-This extension was created to provide a more efficient and accessible coding environment for students, researchers, and process-systems engineers working with gPROMS models.
+The extension is implemented in JavaScript using the Visual Studio Code Extension API and Language Server Protocol. It includes a TextMate grammar, language server, symbol parser, snippet library, and packaged VSIX installer.
 
 ## Source code
 
-The complete source code, installation package, documentation, and changelog are available through the project’s GitHub repository.
+The source code, documentation, changelog, and installation files are available in the GitHub repository:
+
+[View the project on GitHub](https://github.com/SinaGhanbarii/gPROMS-ModelBuilder-VSCode-Extension)
