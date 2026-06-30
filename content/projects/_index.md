@@ -6,8 +6,8 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Research and Engineering Projects
-      text: Selected projects spanning desalination, process design, sustainability, catalysis, machine learning, numerical methods, and process control.
+      title: Selected Projects
+      text:
       filters:
         folders:
           - projects
