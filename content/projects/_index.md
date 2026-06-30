@@ -9,7 +9,7 @@ sections:
       title: Research and Engineering Projects
       text: Selected projects spanning desalination, process design, sustainability, catalysis, machine learning, numerical methods, process control, and developer tools.
 
-      count: 0
+      count: 12
 
       sort_by: Date
       sort_ascending: false
