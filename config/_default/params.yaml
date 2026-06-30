@@ -54,7 +54,7 @@ hugoblox:
   footer:
     style: minimal
     language_switcher: false
-    text: "Built with Hugo Blox and deployed with GitHub Pages."
+    text: ""
 
   copyright:
     notice: "© {year} {name}"
